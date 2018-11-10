@@ -1,0 +1,633 @@
+﻿body, div, ul, li{
+	margin : 0; 
+	padding : 0;}
+
+body {
+	background-color : #f2faf8;
+	font-family: Arial, sans-serif;
+	font-size : 1em;
+}
+
+#global{
+	width: 100%;
+	margin: 0px;
+}
+
+/*Header*/
+
+header { 
+	display:block;
+	width : 100%;
+	background-color:#8dbbe6;
+}
+
+#logo{
+	display : inline-block;
+	position:relative;
+	left:5%;
+	top:18%;
+}
+nav{
+	display: inline-block;
+	position:relative;
+	left:5%;
+	top:40%;
+	margin:0;
+	padding:0;
+	line-height:1;
+}
+#menu{
+	margin:0;
+	padding:0;
+}
+
+ul,li{
+	list-style:none;
+}
+ 
+
+
+ nav li {
+	display : block;
+	color:#4d6594;
+	background:#b9d6eb;
+	text-decoration:none;
+	float:left;
+	width:150px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+ }
+ 
+ li.simple, li.deroulant{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:solid;
+	border-color:#4d6594;
+	margin-left:5px;
+	margin-bottom :3px;
+ }
+ 
+
+ nav a{
+	color:#4d6594;
+	background:#b9d6eb;
+	text-decoration:none;
+	padding-left:3px;
+	padding-right:2px;
+}
+
+nav a:focus,
+nav a:hover{
+	color:#ffffff;
+	background:#4d6594;
+	text-decoration:none;
+}
+	
+.sous-menu{
+	background:#4d6594;
+	display:none;
+}
+.deroulant:hover >.sous-menu{
+	display:block;
+	position:static;
+	margin-top:-2px;
+	margin-left:0px;
+	width:auto;
+}
+
+li.sous-menu-elt>a{
+	display:block;
+	position:relative;
+	left:0;
+	float:none;
+	width:auto;
+	background-color:#4d6594;
+	line-height:30px;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	white-space:nowrap;
+	z-index:10;
+}
+
+#liens_header{
+	display : block;
+	position:relative;
+	left:68%;
+	top:20%;
+	width:32%;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#connexion{
+	display:inline-block;
+}
+#recherche{
+	display:inline-block;
+	position:relative;
+	left:2%;
+}
+
+#connexion>a{
+	color:#4d6594;
+	font-style:italic;
+}
+	
+	
+
+/*Corps - disposition des principaux blocs*/
+
+#partie_centrale{
+	display:inline-block;
+	position:relative;
+	left:7%;
+	top:0;
+	width:58%;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}	
+section{
+	display:block;
+	position:relative;
+	left:0;
+	margin:2px;
+	padding:0;
+	background-color:#ffffff;
+}
+
+footer{
+	display:block;
+	position : relative;
+	top : 20px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	background-color:#ffffff;
+}
+
+aside{
+	display:inline-block;
+	position:relative;
+	left:10%;
+	width:28%;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+img{
+	max-width:95%;
+}
+
+
+/*Contenu de la zone centrale suivant les pages*/
+/*Eléments communs à plusieurs pages, peuvent contenir des propriétés particulières pour chaque page dans laquelle ils sont utilisés*/
+div.fil_ariane{
+	display:block;
+	position:relative;
+	top:10px;
+	font-size:12pt;
+	color:#909090;
+	margin-left:10px;
+	margin-bottom:10px;
+	width:auto;
+}
+
+article{
+	display:block;
+	position:relative;
+	top:10px;
+	margin-left:10px;
+	margin-top:50px;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	width:95%;
+}
+
+h1{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#696766;
+	padding:0;
+	margin-bottom:10px;
+	margin-top:3px;
+	line-height:0.8em;
+}
+h6{
+	font-size:10pt;
+	font-weight:bold;
+	color:#e6995f;
+	margin:5px;
+	padding:5px;
+}
+time {
+	font-size:10pt;
+	font-weight:bold;
+	color:#e6995f;
+	padding:0;
+	margin:0;
+}
+p{
+	margin:0;
+	padding:0;
+	line-height:1.25em;
+	/*white-space:pre-line;*/
+}
+.corps_art>a{
+	color:#4d6594;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.corps_art>a:hover{
+	text-decoration:underline;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:3px 0px;
+	line-height:auto;
+	empty-cells:hide;
+	font-size:0.8em;
+	text-align:justify;
+	height:auto;
+	padding:2px;
+	margin:0px;
+	width:98%;
+}
+th{
+border-right:1px solid #4d6594;
+}
+td{
+	border-right:1px solid #4d6594;
+	padding:3px;
+}
+
+th.titre{
+	border-right:none;
+	border-bottom:2px solid #4d6594;
+	color:#4d6594;
+}
+th.titre:empty{
+	border-bottom:none;
+	text-align:center;
+}
+
+
+
+tr.fonce{
+	background-color:#ececec;
+}
+
+div.pages{
+	text-align:center;
+}
+/*Page actualité*/
+
+/*Page Le Club>Le Bureau*/
+
+/*Page Le Club>Les Créneaux*/
+table.legende td{
+	border-right:none;
+	padding-bottom:15px;
+	vertical-align:middle;
+}
+
+.enfants-ado{
+	background-color:#a184db;
+}
+.debutants{
+	background-color:#f2f445;
+}
+.perfectionnement{
+	background-color:#f8b775;
+}
+
+.compet{
+	background-color:#ef4023;
+}
+.jeux_libres{
+	background-color:#00ad4e;
+}
+
+.interclubs{
+	background-color:#0973bb;
+}
+
+/*Infos inscriptions*/
+
+section.info_complementaires{
+	display:block;
+	position:relative;
+	top:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	background-color:#ffffff;
+}
+
+.docs_telechargeables>a,.contacts_inscription a{
+	color:#4d6594;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.docs_telechargeables>a:hover, .contacts_inscription a:hover{
+	text-decoration:underline;
+}
+div.docs_telechargeables{
+	display:inline-block;
+	position:relative;
+	left:5%;
+	top:5%;
+	vertical-align:top;
+	
+}
+div.contacts_inscription{
+	display:inline-block;
+	position:relative;
+	left:20%;
+	top:5%;
+	vertical-align:top;
+}
+.contacts_inscription p{
+	font-weight:bold;
+	font-size:12px;
+}
+/* Page Interclubs>Equipes*/
+
+table.calendrier{
+	display:block;
+	position:relative;
+	width:100%;
+	overflow-y:auto;
+	height:100px;
+	table-layout:fixed;
+	margin:0px;
+	padding:0px;
+	border-right:none;
+}
+
+.calendrier th, .calendrier td{
+	width:25%;
+	border-right:none;
+}
+
+.calendrier th{
+	color:#4d6594;
+	text-align:left;
+}
+
+article.calendrier{
+	margin-bottom :100px;
+}
+.joueur_equipe{
+	column-count:3;
+	column-gap:10px;
+	column-fill:balance;
+}
+
+td.date{
+	font-size:10pt;
+	font-weight:bold;
+	color:#e6995f;
+}
+/*Page Tournois>Tournois individuels*/
+h1.titre_tournoi{
+	display:block;
+	position:relative;
+	right:10%
+}
+div.date_tournoi{
+	display:block;
+	position:relative;
+	width:30%;
+}
+div.lieu_tournoi,div.doc_tournoi {
+	display:inline-block;
+	position:relative;
+	width:30%;
+}
+	
+/*Page Tournois>Tournoi interne */
+section.tournoi_interne{
+	background-color:transparent;
+}	
+
+article.tournoi_interne, article.intro{
+	background-color:#ffffff;
+	width:100%;
+	padding:10px;
+}
+
+article.tournoi_interne{
+	margin-top:20px;
+}
+
+article.intro{
+	margin-top: 0px;
+	font-weight:bold;
+}
+.tournoi_interne>img{
+	float:left;
+	padding-right:20px;
+}
+/*Le Forum*/
+
+div.entete_post,div.publier_sujet{
+	display:block;
+	background-color:#d7d7d7;
+	font-size:0.8em;
+	font-weight:bold;
+}
+div.corps_post{
+	padding:5px;
+}
+div.theme,div.autheur,div.date {
+	display:inline-block;
+	position:relative;
+}
+div.theme{
+	width:60%;
+}
+div.autheur{
+	left:5%;
+	width:24%;
+}
+div.date {
+	left:5%
+}
+
+div.entete_commentaire{
+	display:block;
+	font-size:0.8em;
+	font-weight:bold;
+}
+h1.commentaires {
+	margin:5px;
+}
+div.autheur_commentaire{
+	display:inline-block;
+	position:relative;
+	left:1%;
+	width:85%;
+}
+div.date_commentaire{
+	display:inline-block;
+	position:relative;
+	left:5%
+}
+div.corps_commentaire {
+	display:block;
+	position:relative;
+	left:1%;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:0.8em;
+}
+form.publier_sujet>input[type="button"]{
+	display:block;
+	position:relative;
+	margin-left:530px;
+	margin-top: 10px;
+	float:left;
+}
+
+div.sujet_forum{
+	display:block;
+	position:relative;
+	border:solid;
+}
+
+.fonction{
+	font-weight:bold;
+	color:#e6995f;
+}
+
+
+
+
+.mes-tournois>table{
+	display:block;
+	width:700px;
+	overflow-y:scroll;
+	border-spacing:0px 0px;
+	
+}
+
+
+
+.date_tournoi,.lieu_tournoi,.doc_tournois{
+	display:block;
+	position:relative;
+	margin-left:0;
+	margin-top:0;
+	float:left;
+	font-size: 10pt;
+	color:#4d6594;
+	font-weight:bold;
+	
+}
+.tournoi_interne>.date_tournoi,.tournoi_interne>.lieu_tournoi,.tournoi_interne>.doc_tournois{
+	float:none;
+	margin-left:220px;
+	margin-bottom:30px;
+}
+.lieu_tournoi,.doc_tournois{
+	margin-left:200px;
+}
+
+.date_tournoi>.date{
+	font-size:10pt;
+	font-weight:bold;
+	color:#e6995f;
+}
+
+
+/*Blocs de droite*/
+h2{
+	font-size:16pt;
+	font-weight:bold;
+	color:#4d6594;
+}
+h4{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+
+.contenu_block_droit{
+	position:relative;
+	margin-top:0px;
+	padding:0 0 0 10px;
+	background-color : white;
+	overflow-y:auto;
+	width:100%;
+	max-height:5%;
+}
+.contenu_block_droit>p{
+	font-size:10pt;
+}
+
+/*Pied de page*/
+
+
+.footer_liens_utiles{
+	display : inline-block;
+	position:relative;
+	left:5%;
+	top:5%;
+}
+.footer_liens_utiles>a{
+	color:#4d6594;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.footer_liens_utiles>a:hover{
+	text-decoration:underline;
+}
+
+.partenaires{
+	display:inline-block;
+	position:relative;
+	left:20%;
+	top:5%;
+}
+
+/*Formulaires*/
+section.formulaire{
+	height:500px;
+}
+div.formulaire{
+	display:block;
+	position:relative;
+	left:30%;
+	top:30%;
+}
+label{
+	color :#4d6594;
+	text-align:left;
+	font-weight:bold;
+	text-decoration:italic;
+	width:50px;
+}
+label,input{
+	margin:5px;
+}
+input[type="submit"]{
+	background-color:#4d6594;
+	border-radius:5px;
+	color:#ffffff;
+}
+input[name="envoyer"]{
+	display:block;
+}
+.formulaire a{
+	color :#4d6594;
+	font-size:0.8em;
